@@ -17,13 +17,16 @@ header {
 
 .welcome-box, .quiz-time-box {
     background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
+    padding: 50px;
+    padding-top: 100px;
     border-radius: 10px;
-    width: 600px;
+    height: 300px;
+    width: 500px;
 }
 
 .quiz-time-box img {
-    width: 100%;
+    width: 85%;
+    margin: auto;
 }
 
 .quiz-title {

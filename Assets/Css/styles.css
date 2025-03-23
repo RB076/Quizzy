@@ -12,27 +12,30 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .welcome-box, .quiz-time-box {
     background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    padding: 50px;
+    padding-top: 100px;
     border-radius: 10px;
-    width: 300px;
+    height: 300px;
+    width: 500px;
 }
 
 .quiz-time-box img {
-    width: 100%;
+    width: 85%;
+    margin: auto;
 }
 
-/* Main Section */
 .quiz-title {
     background: rgba(255, 255, 255, 0.2);
-    display: inline-block;
-    padding: 10px 20px;
+    display:inline-block;
+    padding: 10px 250px;
     border-radius: 10px;
     margin-top: 20px;
+    font-size: 2em;
 }
 
 .quiz-container {
@@ -43,10 +46,9 @@ header {
 }
 
 .quiz-card {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
-    width: 200px;
+    width: 350px;
     text-align: center;
 }
 

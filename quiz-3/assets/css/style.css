@@ -1,0 +1,13 @@
+:root {
+    --white-bg: rgba(255, 255, 255, 0.2);
+    --blue-color-1: #CCCCFF;
+    --blue-color-2: #8C8CF4;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: url(imgs/bg-1.jpg) no-repeat center center fixed; */
+    background-size: cover;
+  }

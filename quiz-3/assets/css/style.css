@@ -1,7 +1,9 @@
 :root {
     --white-bg: rgba(255, 255, 255, 0.2);
+    --blue-bg: #80D2CE;
     --blue-color-1: #CCCCFF;
     --blue-color-2: #8C8CF4;
+    
 }
 
 body {
@@ -47,38 +49,61 @@ header .menu-icon i {
 }
 main h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .quiz-info-container {
     margin: 15px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--blue-bg);
+    outline: 1px solid black;
 }
 @media only screen and (min-width: 1200px) {
     .quiz-info-container {
-      width: 95%;
-      margin: 15px auto;
-      background-color: aliceblue;
+      width: 57%;
     }
   }
 .quiz-info-container .left{
 }
 .quiz-info-container .left h3{
-
-}
-.quiz-info-container .left h3:first-of-type{
-    
+    font-weight: normal;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 .quiz-info-container .left p{
-
+    color: white;
+    line-height: 35px;
 }
 .quiz-info-container .right{
-
+    position: relative;
+}
+.quiz-info-container .right::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 46px;
 }
 .quiz-info-container .right img{
 
 }
 .quiz-info-container .right button{
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    z-index: 2;
+    cursor: pointer;
 }

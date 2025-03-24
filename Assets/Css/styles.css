@@ -72,7 +72,9 @@ body {
     width: 350px;
     text-align: center;
 }
-
+.quiz-card a {
+    color: white;
+}
 .quiz-card img {
     width: 100%;
     border-radius: 30px;

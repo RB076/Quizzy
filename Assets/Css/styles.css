@@ -7,7 +7,12 @@ body {
     color: white;
     text-align: center;
 }
-
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: unset;
+}
 header {
     display: flex;
     justify-content: space-around;
@@ -56,7 +61,6 @@ header {
     width: 100%;
     border-radius: 10px;
 }
-
 footer {
     margin-top: 20px;
     padding: 10px;

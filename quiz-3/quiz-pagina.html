@@ -23,7 +23,7 @@
                 <i class="material-icons">menu</i>
         </div>
       </header>
-      <main>
+      <main class="quiz-info" style="display: none;">
         <h2>Quiz Naam</h2>
         <div class="quiz-info-container">
             <div class="left">
@@ -38,5 +38,60 @@
             </div>
         </div>
       </main>
+      <section class="quiz-container" style="display: none;">
+        <div id="progress">
+            <span style="background-color: var(--blue-color-2);"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="question-area">
+            <h2 id="question">Question: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel blanditiis ullam <br> X/XX</h2>
+            <div class="options" style="display: none;">
+                <div class="option">Option 1</div>
+                <div class="option">Option 2</div>
+                <div class="option">Option 3</div>
+            </div>
+            <!-- Open question -->
+            <div class="open-option" style="display: none;">
+                <input type="text" name="" id="openQ" autofocus placeholder="Antwoord....">
+            </div>
+            <div class="navigation">
+                <button id="prev">Vorige vraag</button>
+                <button id="next">Volgende vraag</button>
+            </div>
+        </div>
+      </section>
+      <section class="result-contaier">
+        <h3>Jouw score is: <span id="userResult">X</span>/15</h3>
+        <div class="answers-blocks">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </section>
 </body>
 </html>

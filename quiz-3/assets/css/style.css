@@ -1,6 +1,7 @@
 :root {
     --white-bg: rgba(255, 255, 255, 0.2);
     --blue-bg: #80D2CE;
+    --blue-bg-2: #60BFBE;
     --blue-color-1: #CCCCFF;
     --blue-color-2: #8C8CF4;
     
@@ -47,7 +48,7 @@ header .home-icon-box i::before {
 header .menu-icon i {
     margin-right: 20px;
 }
-main h2 {
+main.quiz-info h2 {
     text-align: center;
     font-size: 35px;
 }
@@ -59,7 +60,7 @@ main h2 {
     padding: 40px;
     border-radius: 10px;
     background-color: var(--blue-bg);
-    outline: 1px solid black;
+    outline: 0.8px solid black;
 }
 @media only screen and (min-width: 1200px) {
     .quiz-info-container {
@@ -106,4 +107,119 @@ main h2 {
     border-radius: 14px;
     z-index: 2;
     cursor: pointer;
+}
+
+.quiz-container {
+
+}
+#progress {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+.quiz-container #progress span {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--blue-color-1);
+    display: block;
+    margin-right: 25px;
+}
+.quiz-container .question-area {
+
+}
+.quiz-container #question {
+    text-align: center;
+    font-size: 20x;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+.quiz-container  .options {
+    width: 50%;
+    margin: 20px auto;
+}
+.quiz-container  .options .option {
+    width: 100%;
+    background-color: var(--blue-bg);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.quiz-container  .options .option:hover {
+    background-color: var(--blue-color-1);
+}
+.quiz-container .open-option {
+    width: 50%;
+    margin: 20px auto;
+}
+.quiz-container .open-option input {
+    width: 100%;
+    background-color: var(--blue-bg);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: text;
+    transition: 0.3s;
+    border: none;
+}
+.quiz-container .open-option input:focus {
+    border: none;
+    outline: none;
+}
+.quiz-container .navigation {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.quiz-container .navigation button {
+    background-color: var(--blue-color-1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.result-contaier {
+    background-color: var(--blue-bg-2);
+    margin: 15px auto;
+    width: 50%;
+    padding: 30px 50px 50px 50px;
+    border-radius: 10px;
+}
+.result-contaier h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.result-contaier .answers-blocks {
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.result-contaier .answers-blocks span {
+    display: block;
+    background-color: white;
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+}
+.result-contaier .answers-blocks span.correct {
+    background-color: green;
+}
+.result-contaier .answers-blocks span.wrong {
+    background-color: red;
 }

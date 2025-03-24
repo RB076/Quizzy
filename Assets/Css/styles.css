@@ -19,6 +19,22 @@ header {
     align-items: center;
     padding: 40px;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, black, transparent);
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    z-index: 1000;
+}
 
 .welcome-box, .quiz-time-box {
     background: rgba(255, 255, 255, 0.2);
@@ -59,7 +75,8 @@ header {
 
 .quiz-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 20px rgb(38, 38, 38);
 }
 footer {
     margin-top: 20px;

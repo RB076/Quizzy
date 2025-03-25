@@ -1,22 +1,42 @@
 const questions = [
-    { question: "What is the primary cause of climate change?", choices: ["Deforestation", "Burning fossil fuels", "Solar flares", "Volcanic eruptions"], answer: 1 },
-    { question: "Which gas is most responsible for global warming?", choices: ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"], answer: 2 },
-    { question: "What is the greenhouse effect?", choices: ["Cooling of the Earth", "Heat trapped by gases in the atmosphere", "Melting of ice caps", "Formation of acid rain"], answer: 1 },
-    { question: "Which sector contributes the most to global carbon emissions?", choices: ["Agriculture", "Transport", "Energy production", "Construction"], answer: 2 },
-    { question: "What renewable energy source is the most widely used?", choices: ["Solar", "Wind", "Hydropower", "Geothermal"], answer: 2 },
-    { question: "Which country emits the most CO2 annually?", choices: ["USA", "China", "India", "Russia"], answer: 1 },
-    { question: "What percentage of the world’s coral reefs are threatened by climate change?", choices: ["20%", "50%", "75%", "90%"], answer: 2 },
-    { question: "Which of these is NOT an effect of climate change?", choices: ["Rising sea levels", "More extreme weather", "Increased biodiversity", "Ocean acidification"], answer: 2 },
-    { question: "What can individuals do to help combat climate change?", choices: ["Recycle more", "Drive less", "Use renewable energy", "All of the above"], answer: 3 },
-    { question: "Which international agreement aims to limit global temperature rise?", choices: ["Kyoto Protocol", "Montreal Agreement", "Paris Agreement", "Rio Pact"], answer: 2 }
+    { question: "Wat is een hashtag?", choices: ["Foto", "Video", "Symbool", "Woord"], answer: 2 },
+    { question: "Wat is phishing?", choices: ["E-mailfraude", "Foto's delen", "Social media", "Video's uploaden"], answer: 0 },
+    { question: "Wat betekent DM op sociale media?", choices: ["Document", "Direct Message", "Download", "Discussie"], answer: 1 },
+    { question: "Wat is een 'emoji'?", choices: ["Afbeelding", "Tekst", "Symbool", "Bestand"], answer: 2 },
+    { question: "Wat betekent 'viral' op het internet?", choices: ["Populair", "Onbekend", "Verwijderd", "Verouderd"], answer: 0 },
+    { question: "Wat is een 'meme'?", choices: ["Afbeelding", "Tekst", "Grappige afbeelding", "Video"], answer: 2 },
+    { question: "Wat is een 'browser'?", choices: ["App", "Zoeken", "Webpagina", "Website"], answer: 0 },
+    { question: "Wat betekent 'cookies' in de online wereld?", choices: ["Eten", "Data", "Afbeeldingen", "Links"], answer: 1 },
+    { question: "Wat is 'uploaden'?", choices: ["Delen", "Verwijderen", "Versturen", "Gegevens plaatsen"], answer: 3 },
+    { question: "Wat is een 'filter' op sociale media?", choices: ["Afbeelding", "Foto-effect", "Tekst", "Reactie"], answer: 1 }
 ];
 
 const openQuestions = [
-    { question: "Name one consequence of global warming.", correctAnswers: ["rising sea levels", "extreme weather", "melting ice caps"] },
-    { question: "How does deforestation contribute to climate change?", correctAnswers: ["reduces oxygen", "increases co2", "less carbon absorption"] },
-    { question: "What can governments do to reduce carbon emissions?", correctAnswers: ["carbon tax", "invest in renewables", "promote public transport"] },
-    { question: "How does climate change impact wildlife?", correctAnswers: ["habitat loss", "migration changes", "species extinction"] },
-    { question: "What is one action you can take today to reduce your carbon footprint?", correctAnswers: ["use renewable energy", "drive less", "reduce meat consumption"] }
+    { 
+        question: "Wat is een voorbeeld van een wachtwoordbeheer?", 
+        correctAnswers: ["wachtwoord", "password"], 
+        exampleAnswers: ["wachtwoord", "paswoord", "password"]
+    },
+    { 
+        question: "Wat noem je het proces van het delen van nep informatie?", 
+        correctAnswers: ["nepnieuws", "fake news"], 
+        exampleAnswers: ["nepnieuws", "fake news", "misinformatie"]
+    },
+    { 
+        question: "Wat gebruik je om je online veiligheid te beschermen?", 
+        correctAnswers: ["wachtwoord", "antivirus", "firewall"], 
+        exampleAnswers: ["wachtwoord", "virusscanner", "firewall"]
+    },
+    { 
+        question: "Wat moet je doen als je wordt gepest online?", 
+        correctAnswers: ["blokkeren", "melden"], 
+        exampleAnswers: ["blokkeren", "rapporteren", "melden"]
+    },
+    { 
+        question: "Wat is een betrouwbare bron voor informatie?", 
+        correctAnswers: ["nieuws", "overheid", "journalist"], 
+        exampleAnswers: ["nieuws", "website van de overheid", "bekende krant"]
+    }
 ];
 
 let currentQuestion = 0;

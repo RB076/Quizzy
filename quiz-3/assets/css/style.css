@@ -218,8 +218,8 @@ main.quiz-info h2 {
     border-radius: 10px;
 }
 .result-contaier .answers-blocks span.correct {
-    background-color: green;
+    background-color: #44FF00;
 }
 .result-contaier .answers-blocks span.wrong {
-    background-color: red;
+    background-color: #FF0000;
 }

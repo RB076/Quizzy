@@ -1,2 +1,0 @@
-Graag alleen de startpage en js aanpassen voor de goede quiz antwoorden!!!!
-alles is georganiseerd in de quiz mappen waaronder de css in een aparte assets sindsdat het effiecienter is

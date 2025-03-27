@@ -26,22 +26,22 @@ a:visited {
 
 a {
     text-decoration: none;
-    color: #007bff; /* Blauwe kleur */
+    color: #ffffff; /* Blauwe kleur */
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #0056b3; /* Donkerdere blauwe kleur */
+    color: #759eca; /* Donkerdere blauwe kleur */
     text-decoration: underline;
 }
 
 a:active {
-    color: #ff4500; /* Oranje kleur bij klikken */
+    color: #000000; /* Oranje kleur bij klikken */
 }
 
 a:focus {
-    outline: 2px solid #007bff;
+    outline: 2px solid #818181;
     border-radius: 4px;
 }
 

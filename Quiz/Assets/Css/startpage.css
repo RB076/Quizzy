@@ -23,6 +23,28 @@ a:visited {
     font-size: 50px;
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blauwe kleur */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3; /* Donkerdere blauwe kleur */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff4500; /* Oranje kleur bij klikken */
+}
+
+a:focus {
+    outline: 2px solid #007bff;
+    border-radius: 4px;
+}
+
 header {
     display: flex;
     justify-content: space-between;

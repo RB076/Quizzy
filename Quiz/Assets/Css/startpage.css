@@ -68,6 +68,7 @@ header .home-icon-box i::before {
 }
 header .menu-icon i {
     margin-right: 20px;
+    border-radius: 4px;
 }
 main h2 {
     text-align: center;
@@ -99,10 +100,12 @@ main h2 {
 .quiz-info-container .left p{
     color: white;
     line-height: 35px;
+    border-radius: 4px;
 }
 .quiz-info-container .right{
     position: relative;
     border-radius: 20px;
+
 }
 .quiz-info-container .right::before{
     content: '';

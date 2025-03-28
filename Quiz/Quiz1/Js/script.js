@@ -30,7 +30,7 @@ const openQuestions = [
     { 
         question: "Wat moet je doen als je wordt gepest online?", 
         correctAnswers: ["blokkeren", "melden"], 
-        exampleAnswers: ["blokkeren", "rapporteren", "melden"]
+        exampleAnswers: ["Blokkeren", "rapporteren", "Melden"]
     },
     { 
         question: "Wat is een betrouwbare bron voor informatie?", 

@@ -22,6 +22,7 @@ body {
     align-items: center;
     opacity: 1;
     transition: opacity 1s ease-in-out;
+    z-index: 1000;
 }
 
 h1 {
@@ -31,6 +32,14 @@ h1 {
 
 p {
     font-size: 1.5em;
+}
+
+.top-right-img {
+    position: absolute;
+    top: 15px; 
+    right: 25px; 
+    width: 100px;
+    height: auto;
 }
 
 .loader {
@@ -73,6 +82,7 @@ header {
     font-size: 24px;
     z-index: 1000;
 }
+
 
 .welcome-box, .quiz-time-box {
     background: rgba(255, 255, 255, 0.2);

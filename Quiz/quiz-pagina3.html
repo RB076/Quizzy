@@ -5,39 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz info pagina</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menu icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/Css/startpage.css">
+    <!-- Herhaal icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Quiz/Quiz3/assets/css/style.css">
 </head>
 <body>
-
-    </div>
-    <header>
-        <div class="home-icon-box">
-            <a href="/index.html">
-                <i class="fa fa-home"></i>
-            </a>
+      <header>
+        <div class="header-left">
+            <div class="home-icon-box">
+                <a href="/index.html">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="repeat-icon-box" style="display: none;">
+                <a href="" onclick="restatQuiz()">
+                    <i class="fa fa-repeat"></i>
+                </a>
+            </div>
         </div>
         <div class="menu-icon">
                 <i class="material-icons">menu</i>
         </div>
-    </header>
-    <main>
-        <h2>Quiz Naam</h2>
+      </header>
+      <main class="quiz-info" style="display: block;">
+        <h2>Verantwoordelijk delen van informatie</h2>
         <div class="quiz-info-container">
             <div class="left">
-                <h3>info over Social media en online gedrag</h3>
-                <p>Social media maakt communicatie, netwerken en content delen eenvoudig. Het beïnvloedt trends, marketing, nieuws, educatie en entertainment.</p>
-                <h3>Info over de maker</h3>
-                <p>Ik ben Sjoerd en ben de persoon die deze quiz gemaakt heeft <br> ik vond het interresant om aan de quiz te werken aangezien ik veel op social media zit.</p>
+                <h3>Over de quiz maker</h3>
+                <p>Ik ben Mokhles en heb deze quiz gemaakt. Het was interessant <br> omdat ik veel op social media zit en het belangrijk vind om verantwoord <br> met informatie om te gaan. Test je kennis!</p>
+                <h3>Over de quiz</h3>
+                <p>Test je kennis over verantwoord informatie delen! Beantwoord vragen <br> over privacy, toestemming en wetgeving rond datalekken.  Perfect voor <br> iedereen die meer wil leren over digitale verantwoordelijkheid!</p>
             </div>
             <div class="right">
-                <img src="../Assets/img/social_media.png" width="300px" height="300px ">
-                <button> <a href='./Quiz3/index.html'>Start quiz</a></button>
-                <style>
-            
-                </style>
+                <img src="/Quiz/Quiz3/assets/imgs/info-page-img.png" alt="">
+                <button onclick="startQuiz()">Start de quiz</button>
             </div>
         </div>
-    </main>
+      </main>
+      <section class="quiz-container" style="display: none;">
+        <div id="progress">
+            <!-- <span style="background-color: var(--blue-color-2);"></span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="question-area">
+            <h2 id="question">Question: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel blanditiis ullam <br> X/XX</h2>
+            <div class="options" style="display: block;">
+                <div class="option">Option 1</div>
+                <div class="option">Option 2</div>
+                <div class="option">Option 3</div>
+            </div>
+            <!-- Open question -->
+            <div class="open-option" style="display: none;">
+                <input type="text" name="" id="openQ" autofocus placeholder="Antwoord....">
+            </div>
+            <div class="navigation">
+                <button id="prev" onclick="prev()">Vorige vraag</button>
+                <button id="next" onclick="next()">Volgende vraag</button>
+            </div>
+        </div>
+      </section>
+      <section class="result-container " style="display: none;">
+        <h3>Jouw score is: <span id="userResult">X</span>/15</h3>
+        <div class="answers-blocks">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </section>
+      <script src="/Quiz/Quiz3/assets/Js/script.js"></script>
 </body>
 </html>

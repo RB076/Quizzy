@@ -1,43 +1,45 @@
 const questions = [
-    { question: "Wat is een hashtag?", choices: ["Foto", "Video", "Symbool", "Woord"], answer: 2 },
-    { question: "Wat is phishing?", choices: ["E-mailfraude", "Foto's delen", "Social media", "Video's uploaden"], answer: 0 },
-    { question: "Wat betekent DM op sociale media?", choices: ["Document", "Direct Message", "Download", "Discussie"], answer: 1 },
-    { question: "Wat is een 'emoji'?", choices: ["Afbeelding", "Tekst", "Symbool", "Bestand"], answer: 2 },
-    { question: "Wat betekent 'viral' op het internet?", choices: ["Populair", "Onbekend", "Verwijderd", "Verouderd"], answer: 0 },
-    { question: "Wat is een 'meme'?", choices: ["Afbeelding", "Tekst", "Grappige afbeelding", "Video"], answer: 2 },
-    { question: "Wat is een 'browser'?", choices: ["App", "Zoeken", "Webpagina", "Website"], answer: 0 },
-    { question: "Wat betekent 'cookies' in de online wereld?", choices: ["Eten", "Data", "Afbeeldingen", "Links"], answer: 1 },
-    { question: "Wat is 'uploaden'?", choices: ["Delen", "Verwijderen", "Versturen", "Gegevens plaatsen"], answer: 3 },
-    { question: "Wat is een 'filter' op sociale media?", choices: ["Afbeelding", "Foto-effect", "Tekst", "Reactie"], answer: 1 }
+    { question: "Wat is online identiteit?", choices: ["Je echte naam", "Hoe je jezelf online presenteert", "Een online wachtwoord", "Een social media account"], answer: 1 },
+    { question: "Wat is online imago?", choices: ["Hoe anderen jou online zien", "Je profielfoto", "Je wachtwoord", "Je gebruikersnaam"], answer: 0 },
+    { question: "Wat is een veelvoorkomende manier om je online imago te verbeteren?", choices: ["Negatieve berichten plaatsen", "Privacy-instellingen negeren", "Positieve content delen", "Geen account hebben"], answer: 2 },
+    { question: "Wat kan je online imago schaden?", choices: ["Respectvolle reacties", "Nepnieuws verspreiden", "Goede profielfoto", "Veilige wachtwoorden gebruiken"], answer: 1 },
+    { question: "Wat is een digitale voetafdruk?", choices: ["Je online activiteiten en sporen", "Een digitale handtekening", "Een social media account", "Een screenshot van je profiel"], answer: 0 },
+    { question: "Waarom is privacy belangrijk voor je online identiteit?", choices: ["Om je account populair te maken", "Om jezelf te beschermen tegen misbruik", "Omdat het verplicht is", "Omdat je anders geen likes krijgt"], answer: 1 },
+    { question: "Wat betekent ‘catfishing’?", choices: ["Een online vriendschap", "Een nep online identiteit gebruiken", "Een online game spelen", "Een profiel zonder foto hebben"], answer: 1 },
+    { question: "Wat is een goede manier om je online identiteit te beschermen?", choices: ["Sterke wachtwoorden gebruiken", "Alles openbaar delen", "Je wachtwoorden opschrijven in je bio", "Geen profiel hebben"], answer: 0 },
+    { question: "Wat moet je doen als iemand je online lastigvalt?", choices: ["Negeren en doorgaan", "Terug schelden", "Blokkeren en melden", "Je account verwijderen"], answer: 2 },
+    { question: "Hoe kun je controleren wat er online over jou te vinden is?", choices: ["Je naam googelen", "Wachten tot iemand je tagt", "Een nieuw account aanmaken", "Je wachtwoord veranderen"], answer: 0 }
 ];
+
 
 const openQuestions = [
     { 
         question: "Wat is een voorbeeld van een wachtwoordbeheer?", 
-        correctAnswers: ["wachtwoord", "password"], 
-        exampleAnswers: ["wachtwoord", "paswoord", "password"]
+        correctAnswers: ["wachtwoordbeheer", "password manager"], 
+        exampleAnswers: ["wachtwoord", "paswoord", "password", "password manager", "wachtwoordbeheerder"]
     },
     { 
         question: "Wat noem je het proces van het delen van nep informatie?", 
-        correctAnswers: ["nepnieuws", "fake news"], 
-        exampleAnswers: ["nepnieuws", "fake news", "misinformatie"]
+        correctAnswers: ["nepnieuws", "fake news", "desinformatie"], 
+        exampleAnswers: ["nepnieuws", "fake news", "misinformatie", "desinformatie"]
     },
     { 
         question: "Wat gebruik je om je online veiligheid te beschermen?", 
-        correctAnswers: ["wachtwoord", "antivirus", "firewall"], 
-        exampleAnswers: ["wachtwoord", "virusscanner", "firewall"]
+        correctAnswers: ["wachtwoord", "antivirus", "firewall", "tweefactorauthenticatie"], 
+        exampleAnswers: ["wachtwoord", "virusscanner", "firewall", "tweefactorauthenticatie", "antivirussoftware"]
     },
     { 
         question: "Wat moet je doen als je wordt gepest online?", 
-        correctAnswers: ["blokkeren", "melden"], 
-        exampleAnswers: ["blokkeren", "rapporteren", "melden"]
+        correctAnswers: ["blokkeren", "melden", "rapporteren"], 
+        exampleAnswers: ["blokkeren", "rapporteren", "melden", "contact opnemen met een volwassene", "in gesprek gaan met de pestkop"]
     },
     { 
         question: "Wat is een betrouwbare bron voor informatie?", 
-        correctAnswers: ["nieuws", "overheid", "journalist"], 
-        exampleAnswers: ["nieuws", "website van de overheid", "bekende krant"]
+        correctAnswers: ["nieuws", "overheid", "journalist", "wetenschappelijke publicaties", "betrouwbare websites"], 
+        exampleAnswers: ["nieuws", "website van de overheid", "bekende krant", "wetenschappelijke artikelen", "officiële documenten"]
     }
 ];
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -105,12 +107,10 @@ function checkOpenAnswer() {
 }
 
 function showResults() {
-    // Hide everything except the score board
-    document.getElementById("quiz-container").style.display = "none"; // Hide the quiz
-    document.querySelector("h1").style.display = "none"; // Hide the title
-    nextButton.style.display = "none"; // Hide the "Next" button
+    document.getElementById("quiz-container").style.display = "none"; 
+    document.querySelector("h1").style.display = "none";
+    nextButton.style.display = "none";
 
-    // Show the score board
     resultContainer.classList.remove("hidden");
     scoreDisplay.innerText = `Your score is ${score}/15`;
 

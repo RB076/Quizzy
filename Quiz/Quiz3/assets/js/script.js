@@ -239,7 +239,7 @@ function showResult() {
     document.querySelector('.result-container').style.display = 'block';
     document.getElementById('userResult').textContent = score;
     document.querySelector('.repeat-icon-box').style.display = 'flex';
-
+    document.querySelector('.header-right a .lead-icon').style.display = 'block'
     let  answersBlocks = document.querySelector('.answers-blocks');
     answersBlocks.innerHTML = '';
 

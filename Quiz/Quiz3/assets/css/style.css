@@ -3,8 +3,7 @@
     --blue-bg: #80D2CE;
     --blue-bg-2: #60BFBE;
     --blue-color-1: #CCCCFF;
-    --blue-color-2: #8C8CF4;
-    
+    --blue-color-2: #8C8CF4;   
 }
 
 body {
@@ -47,6 +46,17 @@ header .home-icon-box{
 header .home-icon-box i::before {
     color: black;
     font-size: 40px;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .header-right a {
+    width: 100px;
+    margin-right: 20px;
+}
+header .header-right img {
+    width: 100%;
 }
 header .repeat-icon-box {
     display: flex;
